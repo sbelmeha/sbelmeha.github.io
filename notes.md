@@ -6,7 +6,7 @@ excerpt: Contains my short public notes.
 comments: false
 ---
 
-### #1 Using flatMap instead of unwrapping with if or guard
+#### #1 Using flatMap instead of unwrapping with if or guard
 
 Before
 ```

@@ -6,7 +6,21 @@ excerpt: Contains my short public notes.
 comments: false
 ---
 
-#### Dictionary instead of switch
+### #1 Using flatMap instead of unwrapping with if or guard
+
+Before
+```
+guard let urlValue = getUrlValue() else {
+    return
+}
+let url = URL(string: urlValue)
+```
+Aflter
+```
+let url = getUrlValue().flatMap(URL.init)
+```
+
+#### #0 Dictionary instead of switch
 
 Instead of using `switch` it's possible to use `dictionary`, for example in an enum:
 

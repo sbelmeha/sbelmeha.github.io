@@ -230,7 +230,7 @@
   @extend %clearfix;
 
   &:not(:first-child) {
-    border-top: 1px solid $light;
+    /*border-top: 1px solid $light;*/
   }
 
   .post-item-date {
@@ -269,9 +269,9 @@
     margin-top: 3em;
   }
   span.footer_item {
-    color: $black;
+    color: #ababab;
     opacity: 0.8;
-    font-weight: $bold-weight;
+    font-weight: normal;
     font-size: $small-font-size;
   }
   a.footer_item {

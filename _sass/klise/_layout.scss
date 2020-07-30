@@ -1,12 +1,8 @@
 // Navbar
 .navbar {
   height: auto;
-  max-width: calc(#{$wide-size} - (#{$spacing-full} * 2));
-  max-width: -webkit-calc(#{$wide-size} - (#{$spacing-full} * 2));
   position: relative;
-  margin-right: auto;
-  margin-left: auto;
-  border-bottom: 1px solid $light;
+  margin-left: 40px;
   padding: $spacing-full - 15px $spacing-full;
   @extend %clearfix;
 }
@@ -18,9 +14,9 @@
   -webkit-user-select: none;
 
   a#mode {
-    float: left;
+    float: right;
     left: 8px;
-    top: 6px;
+    top: 4px;
     position: relative;
     clear: both;
     -webkit-transform: scale(1, 1);
@@ -61,7 +57,7 @@
   }
 
   .trigger {
-    float: right;
+    float: left;
   }
 
   .menu-trigger {
@@ -76,10 +72,12 @@
     color: $black;
     line-height: $base-line-height + 0.4;
     text-decoration: none;
-    padding: 5px 8px;
-    opacity: 0.7;
+    font: 700 16px/1.85 Roboto,sans-serif;
+    margin: 5px 16px;
     letter-spacing: 0.3px;
-
+    text-transform: uppercase;
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(70%,transparent),color-stop(0,#fffba0));
+	background: linear-gradient(transparent 80%,#fffba0 0);
     &:hover {
       opacity: 1;
     }
@@ -92,6 +90,7 @@
       position: relative;
       bottom: -3px;
       outline: none;
+      background: none;
     }
 
     @include media-query($on-mobile) {
@@ -181,9 +180,9 @@
 
 // Author
 .author {
-  margin-top: 6.3rem;
-  margin-bottom: 7.2rem;
-  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  text-align: left;
 
   @include media-query($on-mobile) {
     margin-bottom: 3em;
@@ -208,7 +207,7 @@
   }
 
   .author-bio {
-    margin: 0 auto;
+    margin: 0;
     opacity: 0.9;
     max-width: 393px;
     line-height: 1.688;
@@ -262,7 +261,7 @@
 .footer {
   margin-top: 8em;
   margin-bottom: 2em;
-  text-align: center;
+  text-align: left;
 
   @include media-query($on-mobile) {
     margin-top: 3em;

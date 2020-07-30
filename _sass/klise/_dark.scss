@@ -134,7 +134,9 @@ body[data-theme="dark"] {
       }
 
       .menu-link {
-        color: $dark-white;
+        color: #9c9c9c;
+        background: -webkit-gradient(linear,left top,left bottom,color-stop(70%,transparent),color-stop(0,#8934ab));
+        background: linear-gradient(transparent 80%,#8934ab 0);
       }
       @include media-query($on-mobile) {
         background-color: $dark-black;

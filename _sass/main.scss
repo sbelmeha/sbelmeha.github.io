@@ -1,10 +1,10 @@
 // Fonts preferences
-$sans-family: Roboto, sans-serif;
+$sans-family: "Helvetica Neue",Arial,sans-serif;
 $mono-family: Consolas, monospace;
-$base-font-size: 16px;
+$base-font-size: 1.1em;
 $medium-font-size: $base-font-size * 0.938;
 $small-font-size: $base-font-size * 0.875;
-$base-line-height: 1.85;
+$base-line-height: 1.5;
 
 // Font weight
 // $light-weight: 300; // uncomment if necessary
@@ -36,7 +36,7 @@ $dark-gray: #767f87;
 
 // Width of the content area
 $wide-size: 890px;
-$narrow-size: 720px;
+$narrow-size: 1120px;
 
 // Padding unit
 $spacing-full: 30px;
@@ -47,6 +47,8 @@ $on-mobile: 768px;
 $on-tablet: 769px;
 $on-desktop: 1024px;
 $on-widescreen: 1152px;
+
+$remark-width: 280px;
 
 @mixin media-query($device) {
   @media screen and (max-width: $device) {

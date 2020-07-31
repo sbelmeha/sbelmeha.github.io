@@ -112,6 +112,8 @@
     margin: 0;
     padding-top: $spacing-full - 15;
     padding-bottom: $spacing-full - 15;
+    max-width: -webkit-calc(#{$narrow-size} - #{$remark-width});
+    max-width: calc(#{$narrow-size} - #{$remark-width});
   }
 
   ul.task-list {

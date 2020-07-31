@@ -28,8 +28,7 @@ dd,
 ol,
 ul,
 figure {
-  margin: 0;
-  padding: 0;
+  margin-right: #{$remark-width};
 }
 
 // Basic styling

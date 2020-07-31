@@ -26,8 +26,14 @@ hr,
 dl,
 dd,
 ol,
-ul,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 figure {
+  padding: 0;
+  margin: 0;
   margin-right: #{$remark-width};
 }
 
